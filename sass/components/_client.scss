@@ -1,0 +1,52 @@
+.client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+    &__container {
+        width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+    &__title {
+        margin-bottom: 50px;
+        text-align: center;
+    
+        color: $titleTextColor;
+    
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+    }   
+}
+.logo {
+    display: flex;
+
+    &__border:not(:first-child) {
+        margin-left: 30px;    
+    }
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 92px;
+    
+        color: $iconaClientColor;
+        border: 1px solid $iconaClientColor;
+        border-radius: 4px;
+    
+        transition-property: color, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    }
+    &__icon {
+        fill: currentColor;  
+    }
+    &__container:hover,
+    &__container:focus {
+        color: $accentColor;
+        border: 1px solid $accentColor;
+    }
+}

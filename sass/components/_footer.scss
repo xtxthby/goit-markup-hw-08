@@ -1,0 +1,174 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: $heroBgColor;
+
+    &__container {
+        width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+        display: flex;
+        align-items: baseline;
+    }
+}
+.blok-footer:not(:first-child) {
+    margin-left: 70px;
+}
+.blok-footer__logo {
+    width: 145px;
+    
+    color: $text-color;
+
+    font-family: $web-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19px;
+}
+.blok-footer__web {
+    color: $accentColor;
+
+    font-family: $web-font;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.address {
+    margin-top: 20px;
+    width: 231px;
+
+    &__menu &__item + &__item {
+        margin-top: 9px;
+    }
+
+    &__maps {
+        color: $textColor;
+    
+        font-style: normal;
+        line-height: 1.71;
+    }
+    &__info,
+    &__telefon {
+        color: $mailTelColor;
+
+        font-style: normal;
+         line-height: 1.71;
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__info:hover,
+    &__telefon:hover,
+    &__info:focus,
+    &__telefon:focus{
+        color: $accentColor;
+    }
+}
+.blok-footer__text {
+    margin-bottom: 20px;
+
+    color: $textColor;
+    font-weight: 700;
+    line-height: 1.15;
+    text-transform: uppercase;
+}
+.icon-footer {
+    display: flex;
+}
+.icon-footer .icon-footer__social + .icon-footer__social  {
+    margin-left: 10px;
+}
+.icon-footer__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $textColor;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-footer__link:hover,
+.icon-footer__link:focus {
+    background-color: $accentColor;
+}
+.icon-footer__svg {
+    fill: currentColor;
+}
+.form {
+    margin-left: 93px;
+    display: inline-block;
+
+    &__text {
+        margin-bottom: 20px;
+
+        color: $textColor;
+        font-weight: 700;
+        line-height: 1.15;
+        text-transform: uppercase;
+    }
+}
+.telegram {
+    display: flex;
+
+    &__mail {
+        width: 358px;
+        height: 50px;
+    }
+    &__input {
+        width: 100%;
+        height: 100%;
+        padding: 15px 16px;
+    
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 1.25;
+        background-color: $heroBgColor;
+        color: $primaryBgColor;
+    }
+    &__input::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        color: $mailTelColor;
+    }
+    &__button {
+        width: 200px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        margin-left: 12px;
+    
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+            
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-indent: 28px;
+        cursor: pointer;
+        
+        background-color: $accentColor;
+        color: $textColor;
+    
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__button:hover,
+    &__button:focus {
+       background-color: $buttonBgColor;
+    }
+    &__icon {
+        margin-left: 10px;
+    }
+}

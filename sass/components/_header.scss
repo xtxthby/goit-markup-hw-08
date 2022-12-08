@@ -1,0 +1,15 @@
+.header {
+    border-bottom: 1px solid $borderHeaderColor;
+    
+    &__container {
+        width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+}
+
+.position {
+    display: flex;
+    align-items: center;
+}
