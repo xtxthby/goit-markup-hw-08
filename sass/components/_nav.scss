@@ -1,26 +1,28 @@
-.nav {
-    display: flex;
-    align-items: center;
-    &__logo {
-        margin-right: 93px;
+.button-header {
+    background-color: transparent;
+    color: $titleTextColor;
 
-        color: $primaryTextColor;
-    
-        font-family: $webFont;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
-    }
-    &__web {
-        color: $accentColor;
-
-        font-family: $webFont;
-        font-size: 26px;
-        line-height: 1.19;
-    }
+}
+// .button-header .icon-close {
+//     display: none;
+// }
+// .button-header.is-open .icon-close {
+//     display: block;
+// }
+// .button-header.is-open .icon-menu {
+//     display: none;
+// }
+.menu-container {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-color: $primaryBgColor;
 }
 .menu-nav {
-    display: flex;
+    display: none;
 
     &__item:not(:first-child) {
         margin-left: 50px;

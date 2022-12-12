@@ -1,11 +1,11 @@
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     background: $secondBgColor;
-    
+
     &__container {
-        width: 1200px;
+
         padding-left: 15px;
         padding-right: 15px;
         margin: 0 auto;
@@ -17,16 +17,12 @@
         color: $titleTextColor;
     
         font-weight: 700;
-        font-size: 36px;
+        font-size: 28px;
         line-height: 1.17;
     }
 }
 .carta {
-    display: flex;
 
-    &__specialist:not(:first-child) {
-        margin-left: 30px;    
-    }
     &__specialist {
         background: $primaryBgColor;
 

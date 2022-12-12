@@ -1,15 +1,27 @@
 .header {
+    position: relative;   
     border-bottom: 1px solid $borderHeaderColor;
-    
+
     &__container {
-        width: 1200px;
         padding-left: 15px;
         padding-right: 15px;
         margin: 0 auto;
     }
-}
+    
+    &__logo {
 
-.position {
-    display: flex;
-    align-items: center;
+        color: $primaryTextColor;
+    
+        font-family: $webFont;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+    }
+    &__web {
+        color: $accentColor;
+
+        font-family: $webFont;
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }

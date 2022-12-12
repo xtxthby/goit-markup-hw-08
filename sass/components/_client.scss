@@ -1,15 +1,14 @@
 .client {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     
     &__container {
-        width: 1200px;
         padding-left: 15px;
         padding-right: 15px;
         margin: 0 auto;
     }
     &__title {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         text-align: center;
     
         color: $titleTextColor;
@@ -21,15 +20,19 @@
 }
 .logo {
     display: flex;
+    flex-wrap: wrap;
 
-    &__border:not(:first-child) {
+    &__border:nth-child(2n) {
         margin-left: 30px;    
+    }
+    &__border:nth-child(-n+4) {
+        margin-bottom: 30px;    
     }
     &__container {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 170px;
+        width: 210px;
         height: 92px;
     
         color: $iconaClientColor;
@@ -49,4 +52,4 @@
         color: $accentColor;
         border: 1px solid $accentColor;
     }
-}
+}       

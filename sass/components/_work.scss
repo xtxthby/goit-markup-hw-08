@@ -1,6 +1,8 @@
 .work {
-    display: none;
-    padding-bottom: 94px;
+    @media screen and(max-width: 1200px){
+       display: none; 
+    }
+    padding-bottom: 94px;  
     &__container {
         width: 1200px;
         padding-left: 15px;
