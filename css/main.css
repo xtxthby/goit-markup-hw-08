@@ -416,6 +416,21 @@ img {
   padding-right: 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 480px) {
+  .team__container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__container {
+    width: 1200px;
+  }
+}
 .team__title {
   margin-bottom: 50px;
   text-align: center;
@@ -427,6 +442,19 @@ img {
 
 .carta__specialist:nth-child(-n+3) {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .carta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 354px;
+  }
+  .carta__specialist:nth-child(2n) {
+    margin-left: 30px;
+  }
 }
 .carta__specialist {
   background: #FFFFFF;
