@@ -4,10 +4,23 @@
     background-color: $heroBgColor;
 
     text-align: center;
+
     &__container {
         padding-left: 15px;
         padding-right: 15px;
         margin: 0 auto;
+
+        @media screen and(min-width: 480px) {
+            width: 480px;
+        }
+        
+        @media screen and(min-width: 768px) {
+            width: 768px;
+        }
+        
+        @media screen and(min-width: 1200px) {
+            width: 1200px;
+        }
     }
     &__title {
         width: 360px;
@@ -51,7 +64,7 @@
 }
 .overlya {
     height: 400px;
-    max-width: 480px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right,
@@ -61,4 +74,16 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media screen and(min-width: 480px) {
+        width: 480px;
+    }
+    
+    @media screen and(min-width: 768px) {
+        width: 768px;
+    }
+    
+    @media screen and(min-width: 1200px) {
+        width: 1200px;
+    }
 }
