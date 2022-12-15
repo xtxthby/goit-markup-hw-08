@@ -1,8 +1,9 @@
 .benefits {
-
-    &__method {
-        width: 100%;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
     }
+
     &__method:nth-child(-n+3) {
         margin-bottom: 30px;
     }
@@ -16,13 +17,18 @@
         border-radius: 4px;
     
         background-color: $secondBgColor;
+        
     }
+
     &__title {
         color: $titleTextColor;
     
         font-weight: 700;
         line-height: 1.14;
         text-transform: uppercase;
+        @media screen and (max-width: 767px){
+            text-align: center;    
+        }
     }
     &__text {
         margin-top: 10px;
@@ -31,5 +37,37 @@
         letter-spacing: 0.03em;
         
         color: $listTextColor;
+    }
+   
+}
+@media screen and (max-width: 767px) {
+    .benefits__method {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .benefits__method {
+        width: 354px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .benefits__method {
+        width: 270px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .benefits__method:nth-child(2n) {
+        margin-left: 30px;
+    }
+
+    .benefits__method:nth-child(-n+2) {
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .benefits__method:nth-child(n+2) {
+        margin-left: 30px;
     }
 }
