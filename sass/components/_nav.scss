@@ -9,85 +9,153 @@
 .button-header:focus {
     fill: $accentColor;
 }
-// @media screen and ( min-width: 481px) {
-//     .button-header {
-//         display: none;
-//     }
-// }
-// @media screen and (min-width: 480px) {
-//     .menu-container {
-//         display: none;
-//     }
-// }
-.menu-container {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    padding: 40px 48px;
-    background-color: $primaryBgColor;
-    opacity: 0;
-    transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
+@media screen and ( min-width: 768px) {
+    .button-header {
+        display: none;
+    }
 }
-.menu-container.is-open {
-    opacity: 1;
-    transform: translateX(0);
+@media screen and (max-width: 767px) {
+    .menu-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: 40px 48px;
+        background-color: $primaryBgColor;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: transform 250ms ease-in-out;
+    }
+    .menu-container.is-open {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .menu-button {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        background-color: transparent;
+    }
 }
-.menu-button {
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    background-color: transparent;
-} 
+@media screen and (min-width: 768px) {
+    .menu-container {
+        display: flex;
+    }
+}
+@media screen and (min-width: 768px) {
+    .menu-button {
+      display: none;
+    }
+}
+
 .menu-button:hover,
 .menu-button:hover {
     fill: $accentColor;
 }
 
 .menu-nav {
-
-    &__item:nth-child(-n+2) {
-        margin-bottom: 32px;
-    }
-    &__item:nth-child(3) {
-        margin-bottom: 306px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
     }
 
-
-    &__studio,
-    &__portfolio,
-    &__contact {
-
-
-        color: $titleTextColor;
-
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 1.17;
-        letter-spacing: 0.02em;
-    
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width: 767px) {
+        &__item:nth-child(-n+2) {
+            margin-bottom: 32px;
+        }
+        
+        &__item:nth-child(3) {
+            margin-bottom: 306px;
+        }
     }
-    
+
+    @media screen and (min-width: 768px) {
+        &__item:not(:first-child) {
+            margin-left: 50px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        &__studio,
+        &__portfolio,
+        &__contact {
+        
+        
+            color: $titleTextColor;
+        
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 1.17;
+            letter-spacing: 0.02em;
+        
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+    @media screen and (min-width: 768px) {
+        &__studio,
+        &__portfolio,
+        &__contact {
+            position: relative;
+            display: block;
+            padding-top: 32px;
+            padding-bottom: 32px;
+
+            color: $titleTextColor;
+
+            font-weight: 500;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+        }
+        &__studio.current {
+            color: $accentColor;
+        }
+        &__studio.current::after,
+        &__portfolio.current::after,
+        &__contact.current::after {
+            display: block;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            left: 0;
+            bottom: 0;
+        
+            background-color: $accentColor;
+            border-radius: 2px;
+        }
+    }
+  
     &__studio:hover,
     &__studio:focus,
     &__portfolio:hover,
     &__portfolio:focus,
     &__contact:hover,
     &__contact:focus {
-       color: $accentColor;
+        color: $accentColor;
     }
 }
-.menu-contact { 
 
-    &__icon {
-        display: none;
+.menu-contact {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-left: 90px; 
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    @media screen and (min-width: 1200px) {
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-left: 305px;
+    }
+    @media screen and (max-width: 767px) {
+        &__icon {
+            display: none;
+        }
     }
 
-    &__tel { 
+    &__tel {
         display: block;
         margin-bottom: 32px;
 
@@ -99,6 +167,7 @@
         letter-spacing: 0.02em;
 
     }
+
     &__com {
         display: block;
         margin-bottom: 64px;
@@ -114,7 +183,55 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+    @media screen and (min-width: 768px) {
+        &__tel,
+        &__com {
+            display: inline-flex;
+            align-items: center;
+            color: $listTextColor;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.14;
+        }
+    }    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        &__tel {
+            margin-bottom: 21px;
+        }
+        &__com {
+            margin-bottom: 10px;
+         }
+    }
+    @media screen and (min-width: 1200px) {
+        &__tel,
+        &__com{
+            margin: 0;
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        &__item:first-child {
+            margin-left: 50px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        &__tel:hover,
+        &__com:hover,
+        &__tel:focus,
+        &__com:focus,
+        &__icon:hover,
+        &__icon:focus {
+            color: $accentColor;
+        }
+    }
+    &__icon {
+        margin-right: 10px;
+        fill: $listTextColor;
+        fill: currentColor;
+    }
 }
+
 .mobil-social {
     display: flex;
     align-items: center;
@@ -133,7 +250,15 @@
         line-height: 1.22;
         letter-spacing: 0.02em;
     }
+
     &__con:nth-last-child(-n+3) {
-        margin-left: 10px;
+         margin-left: 10px;
     }
 }
+@media screen and (min-width: 768px) {
+    .mobil-social {
+        display: none;
+    }
+}
+
+

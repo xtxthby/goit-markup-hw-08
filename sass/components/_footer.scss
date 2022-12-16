@@ -65,10 +65,13 @@
     }
 }
 .address {
-    margin: 28px 109px 60px 109px;
     width: 231px;
+    @media screen and (max-width: 767px) {
+        margin: 28px 109px 60px 109px;
+    }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin: 28px 165px 60px 61px;
+        margin-top: 28px;
+        margin-bottom: 60px;
     }
 
     &__menu &__item + &__item {
@@ -99,6 +102,19 @@
         color: $accentColor;
     }
 }
+.blok-footer {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        &:first-child {
+            margin-left: 60px;
+        }
+        &:not(:first-child) {
+            margin-left: 165px;
+        }    
+    }
+
+}
+
+
 .blok-footer__text {
     margin-bottom: 20px;
 
