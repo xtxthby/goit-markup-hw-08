@@ -916,8 +916,14 @@ img {
   padding-right: 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 480px) {
+  .footer__container {
+    width: 480px;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer__container {
+    width: 768px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -927,24 +933,10 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
+    width: 1200px;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-  }
-}
-@media screen and (min-width: 480px) {
-  .footer {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer {
-    width: 1200px;
   }
 }
 
@@ -1111,8 +1103,21 @@ img {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 1200px) {
+  .telegram {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .telegram__mail {
+  width: 450px;
   height: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .telegram__mail {
+    width: 358px;
+  }
 }
 .telegram__input {
   width: 100%;
@@ -1188,7 +1193,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .telegram__button {
-    margin-left: 12px;
+    margin: 0 0 0 12px;
   }
 }
 .telegram__button:hover, .telegram__button:focus {

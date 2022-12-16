@@ -4,6 +4,7 @@
     background-color: $heroBgColor;
 
     text-align: center;
+
     @media screen and (min-width: 1200px) {
         padding-top: 200px;
         padding-bottom: 200px;
@@ -14,15 +15,15 @@
         padding-right: 15px;
         margin: 0 auto;
 
-        @media screen and(min-width: 480px) {
+        @media screen and (min-width: 480px) {
             width: 480px;
         }
         
-        @media screen and(min-width: 768px) {
+        @media screen and (min-width: 768px) {
             width: 768px;
         }
         
-        @media screen and(min-width: 1200px) {
+        @media screen and (min-width: 1200px) {
             width: 1200px;
         }
     }
@@ -39,7 +40,7 @@
         line-height: 1.42;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        @media screen and(min-width: 1200px) {
+        @media screen and (min-width: 1200px) {
             width: 696px;
             font-size: 44px;
             line-height: 1.36;
@@ -83,15 +84,15 @@
     background-position: center;
     background-size: cover;
 
-    @media screen and(min-width: 480px) {
+    @media screen and (min-width: 480px) {
         width: 480px;
     }
     
-    @media screen and(min-width: 768px) {
+    @media screen and (min-width: 768px) {
         width: 768px;
     }
     
-    @media screen and(min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         width: 1600px;
         height: 600px;
     }
