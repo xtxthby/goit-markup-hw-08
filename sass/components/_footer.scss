@@ -128,7 +128,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 60px;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 60px;
+    }
 }
 .icon-footer .icon-footer__social + .icon-footer__social  {
     margin-left: 10px;
@@ -178,6 +180,9 @@
 }
 
 .telegram {
+    // @media screen and (min-width: 768px) and (max-width: 1199px){
+    //   display: inline-block;  
+    // }
     @media screen and (min-width: 1200px) {
         display: flex;
     }
@@ -214,12 +219,10 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
 
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 1199px) {
             margin: 20px 125px 0 125px;
         }
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
-            margin-top: 20px;
-        }
+        
         
         @media screen and (min-width: 1200px) {
             margin-left: 12px;
