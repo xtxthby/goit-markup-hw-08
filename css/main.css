@@ -427,7 +427,6 @@ img {
 }
 
 .overlya {
-  height: 400px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -450,7 +449,6 @@ img {
 @media screen and (min-width: 1200px) {
   .overlya {
     width: 1600px;
-    height: 600px;
   }
 }
 
@@ -1642,7 +1640,6 @@ img {
 }
 .menu-block__carta {
   width: 450px;
-  height: 404px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .menu-block__carta {
@@ -1652,11 +1649,6 @@ img {
 @media screen and (min-width: 1200px) {
   .menu-block__carta {
     width: 370px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .menu-block__carta:nth-child(-n+2) {
-    height: 440px;
   }
 }
 @media screen and (max-width: 1199px) {

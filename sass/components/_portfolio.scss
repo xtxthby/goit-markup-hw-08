@@ -99,18 +99,12 @@
 
     &__carta {
         width: 450px;
-        height: 404px;
+
         @media screen and (min-width: 768px) and (max-width: 1199px) {
             width: 354px;
         }
         @media screen and (min-width: 1200px) {
             width: 370px
-        }
-    
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
-            &:nth-child(-n+2) {
-            height: 440px;
-            }
         }
     }
     @media screen and (max-width: 1199px) {

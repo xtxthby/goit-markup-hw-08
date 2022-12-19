@@ -72,7 +72,6 @@
     }   
 }
 .overlya {
-    height: 400px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -94,7 +93,6 @@
     
     @media screen and (min-width: 1200px) {
         width: 1600px;
-        height: 600px;
     }
 
 }
@@ -103,20 +101,23 @@
     .overlya {
         background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)), url('../images/mobile/header-m-img@2x.jpg');
+        rgba(47, 48, 58, 0.4)), 
+        url('../images/mobile/header-m-img@2x.jpg');
     }    
 }
 @media screen and (min-width: 768px) {
     .overlya {
         background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)),url('../images/tablet/header-t-img.jpg');
+        rgba(47, 48, 58, 0.4)),
+        url('../images/tablet/header-t-img.jpg');
     }
     @media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
         .overlya {
             background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),url('../images/tablet/header-t-img@2x.jpg');
+            rgba(47, 48, 58, 0.4)),
+            url('../images/tablet/header-t-img@2x.jpg');
         }
     }
 }
@@ -124,14 +125,16 @@
     .overlya {
         background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)),url('../images/desktop/d-img.jpg');
+        rgba(47, 48, 58, 0.4)),
+        url('../images/desktop/d-img.jpg');
     }
     
     @media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
         .overlya {
             background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),url('../images/desktop/d-img@2x.jpg');
+            rgba(47, 48, 58, 0.4)),
+            url('../images/desktop/d-img@2x.jpg');
         }
     }
 }
