@@ -454,7 +454,7 @@ img {
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+@media screen and (min-device-rixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .overlya {
     background-image: url("../images/mobile/header-m-img@2x.jpg");
   }
