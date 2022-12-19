@@ -180,9 +180,6 @@
 }
 
 .telegram {
-    // @media screen and (min-width: 768px) and (max-width: 1199px){
-    //   display: inline-block;  
-    // }
     @media screen and (min-width: 1200px) {
         display: flex;
     }
@@ -207,6 +204,7 @@
         line-height: 1.25;
         background-color: $heroBgColor;
         color: $primaryBgColor;
+        outline: none;
     }
     &__input::placeholder {
         font-size: 16px;

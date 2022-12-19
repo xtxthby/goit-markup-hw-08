@@ -1169,6 +1169,7 @@ img {
   line-height: 1.25;
   background-color: #2F303A;
   color: #FFFFFF;
+  outline: none;
 }
 .telegram__input::-webkit-input-placeholder {
   font-size: 16px;
