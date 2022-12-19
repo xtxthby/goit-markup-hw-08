@@ -454,7 +454,7 @@ img {
   }
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .overlya {
     background-image: url("../images/mobile/header-m-img@2x.jpg");
   }
@@ -464,7 +464,7 @@ img {
     background-image: url("../images/tablet/header-t-img.jpg");
   }
 }
-@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .overlya {
     background-image: url("../images/tablet/header-t-img@2x.jpg");
   }
@@ -474,7 +474,7 @@ img {
     background-image: url("../images/desktop/d-img.jpg");
   }
 }
-@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .overlya {
     background-image: url("../images/desktop/d-img@2x.jpg");
   }
