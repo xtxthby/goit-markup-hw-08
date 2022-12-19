@@ -37,6 +37,10 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    @media screen and (min-width: 1200px ) {
+        width: 528px;
+        height: 581px;
+    }
 
     &__title {
         margin-bottom: 12px;
@@ -189,18 +193,27 @@
     }
     &__text {
         font-size: 12px;
-        line-height: 1.71;
+        line-height: 1.16;
         
         color: $listTextColor;
         margin-left: 10px;
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.71;
+        }
     }
 
     &__conditions {
+        font-size: 12px;
         margin-left: 3px;
-        line-height: 1.71;
+        line-height: 1.16;
 
         text-decoration: underline $accentColor;
         color: $accentColor;
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.71;
+        }
     }
 }
 
