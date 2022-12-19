@@ -116,12 +116,12 @@
 }
 @media screen and (min-width: 1200px) {
     .overlya {
-            background-image: url('../images/desktop/d-img.jpg');
-        }
+        background-image: url('../images/desktop/d-img.jpg');
+    }
     
-        @media screen and (min-resolution: 2dppx) {
-            .overlya {
-                background-image: url('../images/desktop/d-img@2x.jpg');
-            }
+    @media screen and (min-resolution: 2dppx) {
+        .overlya {
+            background-image: url('../images/desktop/d-img@2x.jpg');
         }
+    }
 }
