@@ -132,6 +132,9 @@ img {
     position: absolute;
     right: 15px;
     top: 10px;
+    color: #212121;
+    -webkit-transition-property: color;
+    transition-property: color;
     background-color: transparent;
   }
 }
@@ -148,7 +151,7 @@ img {
   }
 }
 .menu-button:hover,
-.menu-button:hover {
+.menu-button:focus {
   fill: #2196F3;
 }
 
