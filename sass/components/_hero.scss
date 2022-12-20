@@ -96,7 +96,7 @@
 
 }
 
-@media screen and (min-device-rixel-ratio: 2), (min-resolution: 2dppx) {
+@media screen and (min-device-rixel-ratio: 2),  (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .overlya {
         background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
@@ -111,7 +111,7 @@
         rgba(47, 48, 58, 0.4)),
         url('../images/tablet/header-t-img.jpg');
     }
-    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    @media screen and (min-device-pixel-ratio: 2),  (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .overlya {
             background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
@@ -128,7 +128,7 @@
         url('../images/desktop/d-img.jpg');
     }
     
-    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    @media screen and (min-device-pixel-ratio: 2),  (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .overlya {
             background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
