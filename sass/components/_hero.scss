@@ -81,6 +81,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @media screen and (max-width: 479) {
+        width: 100%;
+    }
 
     @media screen and (min-width: 480px) {
         width: 480px;
