@@ -278,6 +278,11 @@ img {
   line-height: 1.17;
   letter-spacing: 0.02em;
 }
+@media screen and (max-width: 400px) {
+  .menu-contact__tel {
+    font-size: 25px;
+  }
+}
 .menu-contact__com {
   display: block;
   color: #757575;

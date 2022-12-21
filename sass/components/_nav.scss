@@ -177,7 +177,9 @@
         font-size: 34px;
         line-height: 1.17;
         letter-spacing: 0.02em;
-
+        @media screen and (max-width: 400px) {
+            font-size: 25px;
+        }
     }
 
     &__com {
